@@ -16,10 +16,10 @@ Before you get this script working, you'll need to follow these steps
 pip install rpi_backlight
 ```
 2. Add permissions to the backlight driver by changing rules.d
-```
-[See: https://pypi.python.org/pypi/rpi_backlight](https://pypi.python.org/pypi/rpi_backlight)
-Note: You probably need to reboot afterwards, don't know for sure though.
-```
+
+>[See: https://pypi.python.org/pypi/rpi_backlight](https://pypi.python.org/pypi/rpi_backlight)
+>Note: You probably need to reboot afterwards, don't know for sure though.
+
 3. Add a (dummy) Dimmer to Domoticz. Use the following settings:
 >Hardware:     Your dummy hardware
 >Device name:  Backlight, or whatever you wish it to be named

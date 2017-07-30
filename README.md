@@ -47,4 +47,19 @@ git clone https://github.com/kolkos/rpi_backlight.git
 ``` 
 
 ## Configuration
-After the installation, there are a few settings you'll have to change in the script.
+After the installation, there are a few settings you'll have to change inside the script (for now). Maybe at a later moment I'll use a config file.
+1. Change the Domoticz URL
+```python
+self.domoticz_url = 'http://your.ip.address.here:8080/json.htm'
+```
+2. Change the Dimmer IDX
+```python
+self.domoticz_bl_dimmer_idx = '999'
+```
+3. Save the file and exit your editor
+
+## Running the script
+To run the script, use the following command:
+```
+python /path/to/the/script &
+```

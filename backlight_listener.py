@@ -24,6 +24,8 @@ Preparation/Installation:
             As:           Main Device
     4. Get the device IDX (Setup -> Devices)
     5. Change the variables below
+    5. Make this script executable
+        chmod +x backlight_listener.py
 
 """
 

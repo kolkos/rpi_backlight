@@ -10,7 +10,7 @@ Note: this script must be run from the device with the official RPI Touch Screen
 Preparation/Installation:
     1. Install the rpi_backlight module with pip:
         pip install rpi_backlight
-    2. Add permissions by changing the rules.d
+    2. Add permissions to the backlight driver by changing rules.d
         see https://pypi.python.org/pypi/rpi_backlight
     3. Add a dummy dimmer to Domoticz
         a. Add a Switch manually (Manual Switch)
@@ -36,8 +36,8 @@ import rpi_backlight as bl
 class Backlight(object):
     def __init__(self):
         # change these values to match your settings:
-        self.domoticz_bl_dimmer_idx = '344'
         self.domoticz_url = 'http://192.168.178.18:8080/json.htm'
+        self.domoticz_bl_dimmer_idx = '344'
         
         self.backlight_level_domoticz = None
         self.backlight_level_device = None

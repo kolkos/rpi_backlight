@@ -46,7 +46,7 @@ class Backlight(object):
             self.get_backlight_level_domoticz()
             self.get_rpi_backlight()
             self.evaluate_backlight()
-            time.sleep(1)
+            time.sleep(0.1)
 
     def get_backlight_level_domoticz(self):
         """

@@ -61,5 +61,10 @@ self.domoticz_bl_dimmer_idx = '999'
 ## Running the script
 To run the script, use the following command:
 ```
-python /path/to/the/script &
+python /path/to/the/script/backlight_listener.py &
+```
+
+If you get a Permission Denied error, try the following
+```
+chmod +x /path/to/the/script/backlight_listener.py
 ```

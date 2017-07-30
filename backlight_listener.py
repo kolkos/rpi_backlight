@@ -7,26 +7,6 @@ from domoticz. Because I wanted to change the display brightness from Dashticz
 
 Note: this script must be run from the device with the official RPI Touch Screen
 
-Preparation/Installation:
-    1. Install the rpi_backlight module with pip:
-        pip install rpi_backlight
-    2. Add permissions to the backlight driver by changing rules.d
-        see https://pypi.python.org/pypi/rpi_backlight
-    3. Add a dummy dimmer to Domoticz
-        a. Add a Switch manually (Manual Switch)
-        b. Use the following values:
-            Hardware:     Your dummy hardware
-            Device name:  Backlight, or whatever you wish it to be named
-            Switch type:  Dimmer
-            Type:         AC
-            ID:           Doesn't matter, as long as it is unique
-            Unit code:    Doesn't matter
-            As:           Main Device
-    4. Get the device IDX (Setup -> Devices)
-    5. Change the variables below
-    5. Make this script executable
-        chmod +x backlight_listener.py
-
 """
 
 import requests

@@ -91,7 +91,7 @@ class Backlight(object):
         This method evaluates if the backlight of the device has to be changed
         """
         if self.backlight_level_device != self.backlight_level_domoticz:
-            print "Actual {}, Domoticz {}".format(self.backlight_level_device, self.backlight_level_domoticz)
+            #print "Actual {}, Domoticz {}".format(self.backlight_level_device, self.backlight_level_domoticz)
             # there is a difference between the backlight level and the level
             # in domoticz, let's change the backlight
             bl.set_brightness(self.backlight_level_domoticz)

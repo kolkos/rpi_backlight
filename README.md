@@ -68,3 +68,17 @@ If you get a Permission Denied error, try the following
 ```
 chmod +x /path/to/the/script/backlight_listener.py
 ```
+
+## Adding the Backlight dimmer to Dashticz
+Again, this is pretty straight forward, since you are using a Domoticz dimmer. 
+
+1. Open CONFIG.js
+2. Add the following code:
+
+```javascript
+columns[1] = {}
+columns[1]['blocks'] = [999];
+columns[1]['width'] = 6;
+```
+
+Change the number of the column, change the IDX of your device, change the width to match your needs...

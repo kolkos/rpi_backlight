@@ -21,13 +21,18 @@ pip install rpi_backlight
 >Note: You probably need to reboot afterwards, don't know for sure though.
 
 3. Add a (dummy) Dimmer to Domoticz. Use the following settings:
->Hardware:     Your dummy hardware
->Device name:  Backlight, or whatever you wish it to be named
->Switch type:  Dimmer
->Type:         AC
->ID:           Doesn't matter, as long as it is unique
->Unit code:    Doesn't matter
->As:           Main Device
+
+
+| Field         | Value                                          |
+| ------------- | ---------------------------------------------- |
+| Hardware:     | Your dummy hardware                            |
+| Device name:  | Backlight, or whatever you wish it to be named |
+| Switch type:  | Dimmer                                         |
+| Type:         | AC                                             |
+| ID:           | Doesn't matter, as long as it is unique        |
+| Unit code:    | Doesn't matter                                 |
+| As:           | Main Device                                    |
+
 4. Now get the IDX of the dimmer by going to Setup -> Devices. You'll need this IDX in a later stage
 
 ## Installation
